@@ -15,3 +15,10 @@
   from('test/from-2')
   into 'test/to'
 }
+
+task replaceString(type: Copy) {
+  from 'test/from/build-from.gradle'
+  into 'test/to/1'
+  expand([
+tobeReplace: 'doneReplace'
+]) }

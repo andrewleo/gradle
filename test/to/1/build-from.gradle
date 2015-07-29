@@ -3,6 +3,6 @@
            println "hello world"
       }
             doFirst{
-           println "I am first"
+           println doneReplace
       }
  }
