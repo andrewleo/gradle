@@ -1,0 +1,17 @@
+ task hello {
+      doLast{
+           println "hello world"
+      }
+            doFirst{
+           println "I am first"
+      }
+ }
+
+ task complexCopy(type: Copy) {
+  from('test/from') {
+    include '*'
+    into '1'
+  }
+  from('test/from-2')
+  into 'test/to'
+}
